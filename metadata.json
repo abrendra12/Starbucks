@@ -1,0 +1,6 @@
+{
+  "name": "Siren AI: The Starbucks Experience",
+  "description": "A high-end Starbucks-inspired companion app featuring AI drink search, personalized rewards ranking, dynamic hero banners, and Siren—your virtual barista assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

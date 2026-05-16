@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-sb-green: #006241;
+  --color-sb-light-green: #D4E9E2;
+  --color-sb-house-green: #1E3932;
+  --color-sb-accent: #E9FFD8;
+  --color-sb-gold: #CBA258;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F9F9F9] text-[#1e3932] antialiased selection:bg-sb-light-green selection:text-sb-house-green;
+  }
+}
+
+.sb-glass {
+  @apply bg-white/80 backdrop-blur-md border border-white/20;
+}
+
+.sb-card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md;
+}
+
+.sb-btn-primary {
+  @apply bg-sb-green text-white px-6 py-2.5 rounded-full font-semibold hover:bg-sb-house-green transition-colors;
+}
+
+.sb-btn-outline {
+  @apply border border-sb-green text-sb-green px-6 py-2.5 rounded-full font-semibold hover:bg-sb-light-green transition-colors;
+}
